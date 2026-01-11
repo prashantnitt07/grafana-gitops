@@ -7,6 +7,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: 3000
+      nodePort: 30901
   selector:
     app: {{ include "grafana.name" . }}
 
