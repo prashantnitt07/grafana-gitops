@@ -12,8 +12,6 @@ spec:
     path: .
     helm:
       releaseName: grafana
-      valueFiles:
-        - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
